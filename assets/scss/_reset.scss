@@ -1,0 +1,33 @@
+@charset "UTF-8";
+@font-face {
+	font-family: IRANSansX;
+	font-style: normal;
+	font-weight: 700;
+	src: url('../fonts/otf/IRANSansX-Bold.otf') format('otf'),
+    url('../fonts/ttf/IRANSansX-Bold.ttf') format('ttf'),
+    url('../fonts/woff/IRANSansX-Bold.woff') format('woff'),   
+	url('../fonts/woff2/IRANSansX-Bold.woff2') format('woff2');	 
+}
+
+@font-face {
+	font-family: IRANSansX;
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/otf/IRANSansX-Regular.otf') format('otf'),
+    url('../fonts/ttf/IRANSansX-Regular.ttf') format('ttf'),   
+    url('../fonts/woff/IRANSansX-Regular.woff') format('woff'),
+	url('../fonts/woff2/IRANSansX-Regular.woff2') format('woff2');	
+}
+*,body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: IranSansX;
+}
+ol , ul , li{
+    list-style: none;
+    display: inline;
+}
+a{
+    text-decoration: none;
+}

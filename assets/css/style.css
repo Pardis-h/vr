@@ -1,0 +1,108 @@
+@font-face {
+  font-family: IRANSansX;
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/otf/IRANSansX-Bold.otf") format("otf"), url("../fonts/ttf/IRANSansX-Bold.ttf") format("ttf"), url("../fonts/woff/IRANSansX-Bold.woff") format("woff"), url("../fonts/woff2/IRANSansX-Bold.woff2") format("woff2");
+}
+@font-face {
+  font-family: IRANSansX;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/otf/IRANSansX-Regular.otf") format("otf"), url("../fonts/ttf/IRANSansX-Regular.ttf") format("ttf"), url("../fonts/woff/IRANSansX-Regular.woff") format("woff"), url("../fonts/woff2/IRANSansX-Regular.woff2") format("woff2");
+}
+*, body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: IranSansX;
+}
+
+ol, ul, li {
+  list-style: none;
+  display: inline;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hero {
+  height: 80vh;
+  width: 100%;
+  opacity: 0.7;
+  position: absolute;
+  inset: 0;
+  top: 66px;
+  z-index: 1;
+  cursor: grab;
+}
+.hero:focus, .hero:focus-within, .hero:active, .hero:visited {
+  cursor: grabbing;
+}
+
+.hero-banner {
+  height: 80vh;
+  width: 100%;
+}
+
+.nav {
+  background-color: rgb(248, 249, 250);
+}
+.nav .navbar {
+  background-color: rgb(248, 249, 250);
+}
+.nav .navbar .navbar-nav .nav-item .nav-link {
+  font-size: 14px;
+}
+.nav .navbar-toggler {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.card-img-top {
+  height: 250px;
+  width: 100%;
+  cursor: grab;
+}
+.card-img-top:focus, .card-img-top:focus-within, .card-img-top:active, .card-img-top:visited {
+  cursor: grabbing;
+}
+
+.project-card .card-text {
+  font-size: 14px;
+}
+.project-card .custom-btn {
+  font-size: 15px;
+}
+
+.section-title {
+  color: #70348B;
+}
+
+.custom-btn {
+  border: none;
+  background-color: #70348B;
+  color: #fff;
+  transition: 0.3s ease-in;
+}
+.custom-btn:hover {
+  background-color: rgba(112, 52, 139, 0.7);
+  color: #fff;
+}
+
+.custom-bg {
+  background-color: rgba(112, 52, 139, 0.3);
+}
+
+@media screen and (min-width: 992px) {
+  .nav {
+    background-color: rgba(248, 249, 250, 0.8);
+  }
+  .nav .navbar {
+    background-color: transparent;
+  }
+  .nav .navbar .navbar-nav .nav-item .nav-link {
+    padding: 0 16px;
+  }
+}/*# sourceMappingURL=style.css.map */
