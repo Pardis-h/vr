@@ -6,7 +6,8 @@ const viewer = new PANOLENS.Viewer({
   container: hero,
   autoRotate: true,
   autoRotateSpeed: 0.3,
-  controlBar: false,
+  // controlBar: false,
+  horizontalView : false,
   // controlButtons: [],
   cameraFov: 90,
   // output : "console"
@@ -26,8 +27,9 @@ const ProjectImageVR = (item, index) => {
   const panaIndex = new PANOLENS.ImagePanorama(projectImgLists[index]);
   const viewerIndex = new PANOLENS.Viewer({
     container: item,
-    controlBar: false,
+    // controlBar: false,
     cameraFov: 90,
+    horizontalView: false
   });
   viewerIndex.add(panaIndex);
 };
