@@ -1,22 +1,19 @@
 const hero = document.querySelector(".hero");
-const heroImg = "./assets/img/hero-min.jpg";
+const heroImg = "./assets/img/hero.jpg";
 
 const panorama = new PANOLENS.ImagePanorama(heroImg);
+const panoramaCamera = new PANOLENS.CameraPanorama(hero);
 const viewer = new PANOLENS.Viewer({
   container: hero,
   autoRotate: true,
   autoRotateSpeed: 0.3,
-  horizontalView : true,
-  cameraFov: 90,
+  // horizontalView : true,
+  // cameraFov: 90,
 });
 viewer.add(panorama);
 viewer.OrbitControls.noZoom = true;
-// Lock horizontal view
-if ( viewer.horizontalView ) {
-  viewer.OrbitControls.minPolarAngle = Math.PI / 2;
-  viewer.OrbitControls.maxPolarAngle = Math.PI / 2;
-}
-// viewer.enableControl(1);
+viewer.setCameraControl(panoramaCamera);
+
 
 // list of project
 const projectImgLists = [
