@@ -1,5 +1,5 @@
 const hero = document.querySelector(".hero");
-const heroImg = "./assets/img/hero.jpg";
+const heroImg = "./assets/img/hero-min.jpg";
 
 const panorama = new PANOLENS.ImagePanorama(heroImg);
 const viewer = new PANOLENS.Viewer({
