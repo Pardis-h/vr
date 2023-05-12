@@ -7,8 +7,8 @@ const viewer = new PANOLENS.Viewer({
   container: hero,
   autoRotate: true,
   autoRotateSpeed: 0.3,
-  // horizontalView : true,
-  // cameraFov: 90,
+  horizontalView : true,
+  cameraFov: 90,
 });
 viewer.add(panorama);
 viewer.OrbitControls.noZoom = true;
