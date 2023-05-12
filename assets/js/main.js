@@ -6,13 +6,17 @@ const viewer = new PANOLENS.Viewer({
   container: hero,
   autoRotate: true,
   autoRotateSpeed: 0.3,
-  // controlBar: false,
-  horizontalView : false,
-  // controlButtons: [],
+  horizontalView : true,
   cameraFov: 90,
-  // output : "console"
 });
 viewer.add(panorama);
+viewer.OrbitControls.noZoom = true;
+// Lock horizontal view
+if ( viewer.horizontalView ) {
+  viewer.OrbitControls.minPolarAngle = Math.PI / 2;
+  viewer.OrbitControls.maxPolarAngle = Math.PI / 2;
+}
+// viewer.enableControl(1);
 
 // list of project
 const projectImgLists = [
@@ -27,10 +31,11 @@ const ProjectImageVR = (item, index) => {
   const panaIndex = new PANOLENS.ImagePanorama(projectImgLists[index]);
   const viewerIndex = new PANOLENS.Viewer({
     container: item,
-    // controlBar: false,
+    horizontalView : true,
     cameraFov: 90,
-    horizontalView: false
+    // controlBar: false,
   });
   viewerIndex.add(panaIndex);
+  viewerIndex.OrbitControls.noZoom = true;
 };
 const newProjectImg = projectImg.forEach(ProjectImageVR);

@@ -3,10 +3,9 @@
 .hero {
   height: 80vh;
   width: 100%;
-  opacity: 0.7;
+  // opacity: 0.7;
   position: absolute;
   inset: 0;
-  top: 66px;
   z-index: 1;
   cursor: grab;
   &:focus,
@@ -14,6 +13,9 @@
   &:active,
   &:visited {
     cursor: grabbing;
+  }
+  canvas{
+    opacity: 0.7;
   }
 }
 .hero-banner {
